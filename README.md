@@ -6,16 +6,14 @@ This project simulates basic warehouse operations such as product management, in
 ---
 
 ## Project Structure
-wms_project/
-│
-├── manager.py # Core logic – manages products, locations, inventory, and transactions
-├── product.py # Product model definition
-├── location.py # Location model definition
-├── inventory.py # Inventory transaction model
-├── report.py # Reporting utilities (inventory snapshots, low stock, movement logs)
-├── exceptions.py # Custom exception classes for error handling
-├── utils.py # Helper functions (ID generation, timestamps, etc.)
-└── main.py # Entry point / test script
+- `product.py`: Product class
+- `location.py`: Location class
+- `inventory.py`: Inventory record and transaction logic
+- `manager.py`: WarehouseManager core functionality
+- `report.py`: Reporting functions
+- `main.py`: Menu-driven CLI
+- `utils.py`: Helper functions
+- `exceptions.py`: Custom error classes
 
 ---
 
@@ -27,3 +25,13 @@ Perform stock transfers and quantity adjustments
 Record and view transaction history  
 Generate inventory and low-stock reports  
 
+## How to Run
+```bash
+python main.py
+```
+
+## Team member participation
+- Nihar : coordinator
+- Vishakha Mahajan : product.py, location,py, manager.py
+- Hrushikesh Jahagirdar : inventory.py, manager.py
+- Harsh Gobbur : report.py, main.py
